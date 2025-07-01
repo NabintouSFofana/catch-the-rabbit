@@ -1,6 +1,10 @@
 🐇 Catch the Rabbit – A Fun Click Game
 A simple and interactive browser game where the goal is to catch the rabbit by clicking on it as it moves across the screen. Built using HTML, CSS, and JavaScript, this project combines DOM manipulation and event handling to create a quick, engaging user experience.
 
+📸 Screenshot
+![catch the rabbit]![image](https://github.com/user-attachments/assets/2f0fffd4-65d8-46c0-b0d7-c099c9a4936a)
+
+
 🎮 How to Play
 A rabbit appears and moves randomly on the screen
 
@@ -36,9 +40,6 @@ Improved my understanding of JavaScript timing functions (setInterval, setTimeou
 Practiced working with dynamic positioning and click detection
 
 Gained experience in building interactive front-end projects without any libraries
-
-📸 Screenshot
-![catch the rabbit]![image](https://github.com/user-attachments/assets/2f0fffd4-65d8-46c0-b0d7-c099c9a4936a)
 
 
 📂 How to Run Locally
