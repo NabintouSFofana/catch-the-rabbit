@@ -1,0 +1,136 @@
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 10px;
+  background: linear-gradient(135deg, #1ABC9C, #16A085);
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 2rem;
+  font-family: 'Amatic SC', cursive;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  color: #ffffff;
+}
+
+h1 {
+  text-align: center;
+  font-size: clamp(4rem, 8vw, 8rem);
+  line-height: 1.1;
+  margin: 0;
+  text-shadow: 2px 2px #00000044;
+}
+
+.score {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 0.5rem 2rem;
+  border-radius: 1rem;
+  font-size: clamp(2rem, 5vw, 4rem);
+  margin-left: 2rem;
+  transition: transform 0.2s;
+}
+
+.mole {
+  transition: top 0.3s ease-out;
+}
+
+
+.btn {
+  display: block;
+  margin: 4rem auto 0;
+  padding: 1.2rem 4rem;
+  font-size: clamp(2rem, 2vw, 3.4rem);
+  font-family: 'Amatic SC', cursive;
+  max-width: 90%;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  color: #1ABC9C;
+  background: #ffffff;
+  border: none;
+  border-radius: 50px;
+  box-shadow: 0 8px #0E6655;
+  transition: all 0.2s ease;
+}
+
+.btn:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.btn:active {
+  box-shadow: 0 4px #0E6655;
+  transform: translateY(4px);
+}
+
+
+.game {
+  width: 90%;        /* Responsive width */
+  max-width: 600px;  /* Don’t stretch too wide on big screens */
+  height: auto;      /* Let the height grow naturally */
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2rem auto;
+  aspect-ratio: 3 / 2; /* Maintain a nice shape if possible */
+}
+
+.hole {
+  flex: 1 0 33.33%;
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 1 / 1; /* Keeps each hole square */
+}
+
+.hole:after {
+  display: block;
+  background: url(dirt.svg) bottom center no-repeat;
+  background-size: contain;
+  content: '';
+  width: 100%;
+  height:70px;
+  position: absolute;
+  z-index: 2;
+  bottom: -30px;
+}
+
+
+.mole {
+  background: url('rabbit.png') bottom center no-repeat;
+  background-size: contain;  /* Keep proportions */
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  position: absolute;
+  top: 100%;
+  width: 70%;
+  height: 90%;
+  transition:all 0.4s;
+}
+
+.hole.up .mole {
+  top: 0;
+}
+
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 5rem;
+  }
+
+  .score {
+    font-size: 3rem;
+  }
+
+  .btn {
+    font-size: 2rem;
+    padding: 1rem 1.5rem;
+  }
+}
