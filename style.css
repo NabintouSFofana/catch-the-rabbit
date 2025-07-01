@@ -45,21 +45,21 @@ h1 {
 
 
 .btn {
-  display: block;
-  margin: 4rem auto 0;
-  padding: 1.2rem 4rem;
-  font-size: clamp(2rem, 2vw, 3.4rem);
+  display: inline-block;
+  margin: 4rem auto 0;  /* Top margin separates it from game */
+  padding: 1rem 2rem;
+  font-size: 2.8rem;
   font-family: 'Amatic SC', cursive;
-  max-width: 90%;
   font-weight: bold;
-  cursor: pointer;
   text-align: center;
+  cursor: pointer;
   color: #1ABC9C;
   background: #ffffff;
   border: none;
   border-radius: 50px;
   box-shadow: 0 8px #0E6655;
   transition: all 0.2s ease;
+  max-width: 300px;
 }
 
 .btn:hover {
@@ -130,7 +130,12 @@ h1 {
   }
 
   .btn {
-    font-size: 2rem;
-    padding: 1rem 1.5rem;
+    margin-top: 6rem;       /* More space above the button */
+    font-size: 2.2rem;
+    padding: 0.8rem 1.6rem;
+    max-width: 90%;
+  }
+  .game {
+    margin-bottom: 2rem;    /* Optional: add space below game grid too */
   }
 }
