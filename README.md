@@ -38,7 +38,8 @@ Practiced working with dynamic positioning and click detection
 Gained experience in building interactive front-end projects without any libraries
 
 📸 Screenshot
-![catch the rabbit](https://github.com/user-attachments/assets/68a1bfe2-22b2-4573-8f3b-a2b082cdc5c3)
+![catch the rabbit]![image](https://github.com/user-attachments/assets/2f0fffd4-65d8-46c0-b0d7-c099c9a4936a)
+
 
 📂 How to Run Locally
 Clone this repository
