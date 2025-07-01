@@ -2,7 +2,7 @@
 A simple and interactive browser game where the goal is to catch the rabbit by clicking on it as it moves across the screen. Built using HTML, CSS, and JavaScript, this project combines DOM manipulation and event handling to create a quick, engaging user experience.
 
 📸 Screenshot
-![catch the rabbit]![image](https://github.com/user-attachments/assets/2f0fffd4-65d8-46c0-b0d7-c099c9a4936a)
+(https://github.com/user-attachments/assets/2f0fffd4-65d8-46c0-b0d7-c099c9a4936a)
 
 
 🎮 How to Play
